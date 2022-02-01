@@ -23,7 +23,7 @@ export function Home() {
       price: 120,
     },
     thumbnail:
-      'https://e7.pngegg.com/pngimages/262/890/png-clipart-audi-a5-2013-audi-rs-5-2014-audi-rs-5-sports-car-audi-sedan-car-thumbnail.png',
+      'https://www.webmotors.com.br/imagens/prod/347468/PORSCHE_PANAMERA_2.9_V6_EHYBRID_4_PDK_34746816155112682.png?s=fill&w=130&h=97&q=70&t=true)',
   };
 
   const carDataTwo = {
