@@ -1,4 +1,7 @@
-import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import {
+  getStatusBarHeight,
+  getBottomSpace,
+} from 'react-native-iphone-x-helper';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
@@ -65,6 +68,13 @@ export const Price = styled.Text`
   font-size: ${RFValue(25)}px;
 `;
 
+export const Accessories = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 16px;
+`;
+
 export const About = styled.Text`
   font-family: ${({ theme }) => theme.fonts.primary_400};
   color: ${({ theme }) => theme.colors.text};
@@ -72,4 +82,12 @@ export const About = styled.Text`
   text-align: justify;
   margin-top: 23px;
   line-height: ${RFValue(25)}px;
+`;
+
+export const Footer = styled.View`
+  width: 100%;
+
+  background-color: ${({ theme }) => theme.colors.background_primary};
+
+  padding: 24px 24px ${getBottomSpace() + 24}px;
 `;
